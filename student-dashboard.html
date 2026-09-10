@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Dashboard</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #eef2f7;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            width: 850px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 30px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-top: 30px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 150px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f1f5ff;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .box h3 {
+            color: blue;
+            margin: 0;
+        }
+
+        .box p {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .box:hover {
+            background-color: #dbeafe;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills p {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .progress {
+            width: 100%;
+            height: 15px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .html {
+            width: 90%;
+            height: 15px;
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        .css {
+            width: 80%;
+            height: 15px;
+            background-color: green;
+            border-radius: 10px;
+        }
+
+        .cpp {
+            width: 70%;
+            height: 15px;
+            background-color: orange;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: gray;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="main">
+
+        <h1>Md. Motiur Rahman</h1>
+
+        <h3>CSE Student</h3>
+
+        <button>View Profile</button>
+
+
+        <h2>Statistics</h2>
+
+        <div class="stats">
+
+            <div class="box">
+                <h3>Semester</h3>
+                <p>5th</p>
+            </div>
+
+            <div class="box">
+                <h3>CGPA</h3>
+                <p>4.00</p>
+            </div>
+
+            <div class="box">
+                <h3>Credits</h3>
+                <p>60</p>
+            </div>
+
+            <div class="box">
+                <h3>Result</h3>
+                <p>4.00</p>
+            </div>
+
+        </div>
+
+
+        <div class="skills">
+
+            <h2>Skills</h2>
+
+            <p>HTML</p>
+            <div class="progress">
+                <div class="html"></div>
+            </div>
+
+            <p>CSS</p>
+            <div class="progress">
+                <div class="css"></div>
+            </div>
+
+            <p>C++</p>
+            <div class="progress">
+                <div class="cpp"></div>
+            </div>
+
+        </div>
+
+
+        <h2>Recent Courses</h2>
+
+        <table>
+
+            <tr>
+                <th>Course</th>
+                <th>Code</th>
+                <th>Credit</th>
+            </tr>
+
+            <tr>
+                <td>Web Programming</td>
+                <td>CSE-2441</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Database</td>
+                <td>CSE-2443</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>Algorithm</td>
+                <td>CSE-2444</td>
+                <td>3</td>
+            </tr>
+
+        </table>
+
+
+        <footer>
+            © 2026 Student Dashboard
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
