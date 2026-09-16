@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+
+    <style>
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, blue, purple);
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .image-box {
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(
+                circle,
+                rgba(0,0,0,0.2),
+                rgba(0,0,0,0.8)
+            );
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            backdrop-filter: blur(5px);
+            transition: 0.3s;
+        }
+
+        .image-box:hover .overlay {
+            opacity: 1;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateX(10px);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 80%;
+                margin: 30px auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="image-box">
+
+            <img src="https://via.placeholder.com/300" alt="Profile">
+
+            <div class="overlay">
+                <h2>Motiur Rahman</h2>
+            </div>
+
+        </div>
+
+        <h2>Frontend Developer</h2>
+
+        <p>I am learning HTML and CSS.</p>
+
+        <button>Hire Me</button>
+
+    </div>
+
+</body>
+</html>
