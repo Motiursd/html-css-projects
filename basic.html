@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Practice Problem</title> 
+        <style> 
+            body {  
+                background-color: #f4f4f4; 
+            }
+
+            .card { 
+                background-color: white; 
+                color: black; 
+                width: 300px; 
+                margin: 40px auto; 
+                padding: 20px; 
+                transition: 0.3s; 
+                border-radius: 20px; 
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            } 
+
+            .card:hover { 
+                transform: scale(1.05);
+            } 
+
+            .img { 
+                border-radius: 5px;
+                position: relative; 
+            } 
+
+            .img img {
+                width: 50px;
+                height: 50px;
+            }
+
+          
+            h2 { 
+                margin: 10px 0; 
+                padding: 5px;
+                transition: 0.3s;
+            } 
+
+            h2:hover { 
+                color: blue; 
+                transform: translateX(10px);
+            }  
+
+            p {  
+                margin: 10px 0; 
+                padding: 5px;
+                transition: 0.3s;
+            }  
+
+            p:hover { 
+                color: blue; 
+                transform: translateX(10px);
+            } 
+
+            button { 
+                background-color: blue; 
+                color: white; 
+                border: none;
+                border-radius: 20px; 
+                margin-top: 10px; 
+                padding: 10px 20px; 
+                transition: 0.3s; 
+                cursor: pointer;
+            } 
+
+            button:hover { 
+                background-color: darkblue; 
+                transform: scale(1.05);
+            }  
+
+            @media (max-width: 600px) {
+                .card {
+                    width: 80%;
+                    margin: 30px auto;
+                }
+            }
+        </style>
+    </head>
+             
+    <body>  
+      
+        <div class="card"> 
+            <div class="img">
+                <img src="motiur.jpg" alt="Profile">
+            </div> 
+            
+            <h2>Frontend Developer</h2>   
+            <p>I am learning HTML and CSS</p>   
+            <button>Hire Me</button> 
+        </div>
+    </body>
+</html>
