@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Freelancer Job</title>
+
+    <style>
+
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .card {
+            display: block;
+
+            background-color: aqua;
+            color: black;
+
+            width: 500px;
+
+            margin: 50px auto;
+            padding: 40px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px gray;
+
+            transition: 0.3s;
+        }
+
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+
+        h2 {
+            color: black;
+
+            transition: 0.3s;
+        }
+
+
+        h2:hover {
+            color: blue;
+            transform: scale(1.20);
+        }
+
+
+        nav {
+            background-color: #eeeeee;
+
+            padding: 15px;
+
+            border-radius: 10px;
+        }
+
+
+        nav a {
+            color: black;
+
+            text-decoration: none;
+
+            margin: 0 10px;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: blue;
+        }
+
+
+        p {
+            color: #444444;
+
+            transition: 0.3s;
+        }
+
+
+        p:hover {
+            color: blue;
+            transform: scale(1.50);
+        }
+
+
+        button {
+            display: block;
+
+            background-color: blue;
+            color: white;
+
+            margin: 20px auto;
+
+            padding: 12px 25px;
+
+            border: none;
+            border-radius: 8px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition: 0.4s;
+        }
+
+
+        button:hover {
+            background-color: antiquewhite;
+            color: black;
+
+            transform: scale(1.05); 
+            transform: translatex(5px);
+        }
+
+
+        .service {
+            display: block;
+
+            background-color: #f5f5f5;
+            color: black;
+
+            margin: 15px auto;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            transition: 0.4s;
+        }
+
+
+        .service:hover {
+            background-color: antiquewhite;
+
+            transform: scale(1.05);
+        }
+
+
+        @media (max-width: 600px) {
+
+            .card {
+                width: 80%;
+
+                margin: 30px auto;
+
+                padding: 30px;
+            }
+
+            nav a {
+                display: block;
+
+                margin: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="card">
+
+
+        <section>
+
+            <h2>MY PROJECT</h2>
+
+            <nav>
+
+                <a href="#">Home</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Services</a>
+
+                <a href="#">Contact</a>
+
+            </nav>
+
+        </section>
+
+
+        <section>
+
+            <p>Hello, I'm Motiur Rahman</p>
+
+            <p>Frontend Developer</p>
+
+            <p>I create modern websites</p>
+
+            <button>Hire Me</button>
+
+        </section>
+
+
+        <section>
+
+            <h2>About Me</h2>
+
+            <p>I am a CSE student learning web</p>
+
+            <p>Development and building websites</p>
+
+        </section>
+
+
+        <section>
+
+            <h2>My Services</h2>
+
+            <div class="service">
+                HTML Services
+            </div>
+
+            <div class="service">
+                CSS Services
+            </div>
+
+            <div class="service">
+                Website Design
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Contact</h2>
+
+            <button>Contact Me</button>
+
+        </section>
+
+
+    </div>
+
+</body>
+
+</html>
