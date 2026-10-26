@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title>My Project HTML and CSS</title>
+        
+        <style> 
+            body { 
+                background-color: white; 
+                color: black;
+                margin: 0;
+                padding: 40px 20px;
+                font-family: Arial, sans-serif; 
+            } 
+
+            .card { 
+                background-color: white; 
+                color: black; 
+                width: 600px; 
+                margin: 0 auto; 
+                padding: 40px; 
+                border-radius: 20px; 
+                transition: 0.4s; 
+            } 
+
+            .card:hover { 
+                transform: scale(1.01);
+            } 
+
+            h2 { 
+                color: black; 
+                text-align: center; 
+                margin: 25px 0 15px 0; 
+            } 
+
+           
+            .nav { 
+                background-color: white; 
+                margin: 15px 0px; 
+                padding: 10px 0px; 
+                border-radius: 12px; 
+                transition: 0.3s;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            } 
+
+            .nav:hover { 
+                background-color: white; 
+            }
+
+            .nav a { 
+                color: blue; 
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 15px;
+                border-radius: 8px;
+                transition: 0.3s;
+            } 
+
+            .nav a:hover { 
+                background-color:blue;
+                color: white;
+            } 
+
+            p { 
+                color: black;
+                text-align: center; 
+                margin: 10px 0;
+                font-size: 16px;
+            } 
+
+           
+            button { 
+                background-color: blue;  
+                color: white; 
+                display: block; 
+                width: 100%;
+                border: none;
+                border-radius: 12px;
+                margin: 20px auto; 
+                padding: 12px 20px; 
+                font-size: 17px;
+                font-weight: bold;
+                cursor: pointer; 
+                transition: 0.3s;
+            }  
+
+            button:hover { 
+                background-color: blue;
+                transform: scale(1.02);
+            }  
+
+          
+            .profile-img-container {
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            .profile-img {
+                width: 150px;       
+                height: 150px;        
+                object-fit: cover;    
+                border-radius: 250%; 
+                border: 4px solid blue; 
+                transition: transform 0.3s;
+            }
+
+            .profile-img:hover {
+                transform: scale(1.08); 
+            }
+        </style>
+    </head>
+
+    <body> 
+        <div class="card">
+          
+            <div class="profile-img-container">
+                <img src="motiur.webp" alt="Profile Image" class="profile-img">
+            </div>
+
+            <h2>MY PROJECT</h2> 
+            
+            <div class="nav"> 
+                <a href="#">HOME</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p>Hello, I am Motiur Rahman</p>
+            <p>Frontend Developer</p> 
+            <p>I create modern website</p> 
+
+            <button>Hire Me</button>
+
+            <h2>About Me</h2>
+            <p>I am a CSE Student learning web Development and building websites.</p>
+           
+            <h2>My Services</h2>
+
+            <div class="nav"> 
+                <a href="#">HTML Services</a>
+            </div>
+            
+            <div class="nav"> 
+                <a href="#">CSS Services</a>
+            </div>
+          
+            <div class="nav"> 
+                <a href="#">Website Services</a>
+            </div> 
+
+            <h2>Contact</h2>
+            <button>Contact Me</button>
+        </div> 
+    </body>
+</html>
