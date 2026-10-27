@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project HTML and CSS</title>
+
+    <style>
+        body {     
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card { 
+            background-color: white;
+            color: black;
+            width: 600px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 20px;
+            transition: 0.4s;
+            border: 2px solid blue;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+            margin: 25px 0 15px 0;
+        }
+
+        .nav {
+            background-color: white;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            transition: 0.3s;
+        }
+
+        .nav:hover {
+            background-color: #eff6ff;
+        }
+
+        .nav a {
+            color: blue;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+           background-color: blue;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        button {
+           background-color: blue;
+            color: white;
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.023);
+        }   
+
+        .container {
+            display: flex;
+           background-color: white;
+            justify-content: center;
+            gap: 10px;
+            color: black;
+            width: 100%;
+            transition: 0.3s;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid blue;
+        }
+
+        .container:hover {
+            transform:translateY(-5px);
+        }
+
+        .container h2 {
+            margin: 10px 0;
+        }
+
+        .profile-img-container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+             gap: 10px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            border-radius: 50%;
+            border: 3px solid blue;
+            transition: 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+        }
+
+       
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+        } 
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="profile-img-container">
+            <img src="motiur.webp" alt="Profile Image" class="profile-img">
+            <img src="motiur.webp" alt="Profile Image" class="profile-img">
+            <img src="motiur.webp" alt="Profile Image" class="profile-img">
+        </div>
+
+        <h2>MY PROJECT</h2>
+
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <p>Hello, I am Motiur Rahman</p>
+        <p>Frontend Developer</p>
+        <p>I create modern website</p>
+
+        <button>Hire Me</button>
+
+        <h2>About Me</h2>
+        <p>I am a CSE Student learning web Development and building websites.</p>
+
+        <h2>My Services</h2>
+
+        <div class="nav">
+            <a href="#">HTML Services</a>
+        </div>
+
+        <div class="nav">
+            <a href="#">CSS Services</a>
+        </div>
+
+        <div class="nav">
+            <a href="#">Website Services</a>
+        </div>
+
+        <div class="container">
+            <h2>My Services</h2>
+        </div>
+
+        <div class="container">
+            <h2>My Services</h2>
+        </div>
+
+        <div class="container">
+            <h2>My Services</h2>
+        </div>
+
+        <h2>Contact</h2>
+        <button>Contact Me</button>
+
+    </div>
+</body>
+</html>
